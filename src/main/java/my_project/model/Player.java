@@ -3,6 +3,7 @@ package my_project.model;
 import KAGO_framework.model.InteractiveGraphicalObject;
 import KAGO_framework.view.DrawTool;
 
+import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Player extends InteractiveGraphicalObject {
@@ -31,7 +32,7 @@ public class Player extends InteractiveGraphicalObject {
 
     @Override
     public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(157,152,3,255);
+        drawTool.setCurrentColor(new Color(0x2C74BC));
         drawTool.drawFilledRectangle(x,y,width,height);
         drawTool.setCurrentColor(0,0,0,255);
         drawTool.drawRectangle(x,y,width,height);
@@ -40,11 +41,18 @@ public class Player extends InteractiveGraphicalObject {
     @Override
     public void update(double dt) {
         //TODO 05 Überarbeiten Sie die Update-Methode derart, dass ein Player-Objekt nicht den Bildschirm verlassen kann und immer zu sehen ist.
-        if(direction == 0){
-            x = x + speed*dt;
+
+        if (direction == 0) {
+
+                if (x < 920) {
+             x = x + speed * dt;
+            }
         }
-        if(direction == 2){
-            x = x - speed*dt;
+
+        if (direction == 2) {
+            if (x > 0) {
+             x = x - speed * dt;
+            }
         }
     }
 
