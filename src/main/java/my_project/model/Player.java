@@ -44,7 +44,7 @@ public class Player extends InteractiveGraphicalObject {
 
         if (direction == 0) {
 
-                if (x < 920) {
+                if (x < 904) {
              x = x + speed * dt;
             }
         }
