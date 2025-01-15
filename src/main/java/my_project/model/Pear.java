@@ -5,26 +5,18 @@ import KAGO_framework.view.DrawTool;
 
 import java.awt.*;
 
-public class Pear extends GraphicalObject {
+public class Pear extends Fruit {
 
     //Attribute
     private double speed;
 
     public Pear(double x, double y){
-        this.x = x;
-        this.y = y;
+
         speed = 150;
-        width = 25;
-        height = 35;
+        this.setNewImage("src/main/resources/graphic/Strawberry.png");
     }
 
-    @Override
-    public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(new Color(0x076F00));
-        drawTool.drawFilledRectangle(x,y,width,height);
-        drawTool.setCurrentColor(0,0,0,255);
-        drawTool.drawRectangle(x,y,width,height);
-    }
+
 
     @Override
     public void update(double dt) {

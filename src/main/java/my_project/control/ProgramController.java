@@ -51,6 +51,7 @@ public class ProgramController {
         player01 = new Player(50, Config.WINDOW_HEIGHT-100);
         viewController.draw(player01);
         viewController.register(player01);
+
     }
 
     /**

@@ -5,25 +5,20 @@ import KAGO_framework.view.DrawTool;
 
 import java.awt.*;
 
-public class Apple extends GraphicalObject {
+public class Apple extends Fruit {
 
     //Attribute
     private double speed;
 
     public Apple(double x, double y){
-        this.x = x;
-        this.y = y;
-        speed = 150;
-        radius = 30;
+
+        speed = 200;
+        this.setNewImage("src/main/resources/graphic/Peach.png");
+
     }
 
-    @Override
-    public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(new Color(0xD5485E));
-        drawTool.drawFilledCircle(x,y,radius);
-        drawTool.setCurrentColor(new Color(0x4E2F05));
-        drawTool.drawFilledRectangle(x,y-32, 2,8);
-    }
+
+
 
     @Override
     public void update(double dt) {
