@@ -36,6 +36,7 @@ public class Player extends InteractiveGraphicalObject {
         drawTool.drawFilledRectangle(x,y,width,height);
         drawTool.setCurrentColor(0,0,0,255);
         drawTool.drawRectangle(x,y,width,height);
+        //String.valueOf(Zahlvariable)
     }
 
     @Override

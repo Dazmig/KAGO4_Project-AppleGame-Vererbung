@@ -4,7 +4,9 @@ import KAGO_framework.model.GraphicalObject;
 import KAGO_framework.view.DrawTool;
 
 public abstract class Fruit extends GraphicalObject {
+
     protected double speed;
+    protected double points;
 
     public Fruit(double x, double y) {
         this.x = x;

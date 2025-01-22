@@ -12,12 +12,9 @@ public class Pear extends Fruit {
     public Pear(double x, double y) {
         super(x, y);
         speed = 150;
+        points = 1;
         this.setNewImage("src/main/resources/graphic/Strawberry.png");
     }
 
 }
-
-
-
-
 
