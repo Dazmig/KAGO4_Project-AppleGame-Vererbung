@@ -13,6 +13,7 @@ public class Apple extends Fruit {
         super(x, y);
         value = 2;
         speed = 200;
+        points = 2;
         this.setNewImage("src/main/resources/graphic/Peach.png");
 
     }
