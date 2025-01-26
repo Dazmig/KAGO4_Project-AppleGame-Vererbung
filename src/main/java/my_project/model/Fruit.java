@@ -24,10 +24,10 @@ public abstract class Fruit extends GraphicalObject {
     @Override
     public void update(double dt) {
 
-        setValue(f.value){
+      /*  setValue(f.value){
             f.value = value;
         }
-
+*/
         y = y + speed*dt;
         if (y >= 1030) {
             jumpBack();

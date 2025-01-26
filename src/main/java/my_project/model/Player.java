@@ -42,10 +42,10 @@ public class Player extends InteractiveGraphicalObject {
     @Override
     public void update(double dt) {
 
-        getValue(f.value){
+       /* getValue(f.value){
             f.value = value;
         }
-
+*/
 
 
         //TODO 05 Überarbeiten Sie die Update-Methode derart, dass ein Player-Objekt nicht den Bildschirm verlassen kann und immer zu sehen ist.
