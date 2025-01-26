@@ -24,6 +24,7 @@ public class Player extends InteractiveGraphicalObject {
         speed = 150;
         width = 80;
         height = 40;
+        points = 0;
 
         this.keyToGoLeft    = KeyEvent.VK_A;
         this.keyToGoRight   = KeyEvent.VK_D;
@@ -40,6 +41,13 @@ public class Player extends InteractiveGraphicalObject {
 
     @Override
     public void update(double dt) {
+
+        getValue(f.value){
+            f.value = value;
+        }
+
+
+
         //TODO 05 Überarbeiten Sie die Update-Methode derart, dass ein Player-Objekt nicht den Bildschirm verlassen kann und immer zu sehen ist.
 
         if (direction == 0) {

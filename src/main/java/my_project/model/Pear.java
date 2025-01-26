@@ -11,6 +11,7 @@ public class Pear extends Fruit {
 
     public Pear(double x, double y) {
         super(x, y);
+        value = 3;
         speed = 150;
         this.setNewImage("src/main/resources/graphic/Strawberry.png");
     }

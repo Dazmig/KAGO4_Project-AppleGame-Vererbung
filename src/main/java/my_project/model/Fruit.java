@@ -5,6 +5,7 @@ import KAGO_framework.view.DrawTool;
 
 public abstract class Fruit extends GraphicalObject {
     protected double speed;
+        protected double value;
 
     public Fruit(double x, double y) {
         this.x = x;
@@ -22,6 +23,11 @@ public abstract class Fruit extends GraphicalObject {
 
     @Override
     public void update(double dt) {
+
+        setValue(f.value){
+            f.value = value;
+        }
+
         y = y + speed*dt;
         if (y >= 1030) {
             jumpBack();
